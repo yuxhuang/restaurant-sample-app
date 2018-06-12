@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.has-border-top {
+  border-top: 1px solid $gray-400;
+}
+
+.pullquote {
+  h4 {
+    @include vertical-align()
+  }
+}
+
+.item {
+  padding: 2rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 1rem;
+  }
+}

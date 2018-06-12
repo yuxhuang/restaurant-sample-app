@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.jumbotron {
+  background-color: $light-purple;
+  color: $white;
+
+  h1 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    font-family: Arial, sans-serif;
+  }
+
+  .desc {
+
+    @include media-breakpoint-up(sm) {
+      width: 60%;
+    }
+  }
+}

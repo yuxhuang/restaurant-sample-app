@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+footer {
+  background-color: rgb(175, 175, 175);
+}
+
+.links {
+  @include media-breakpoint-up(sm) {
+    padding-left: 4rem;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: block;
+  }
+}
+
+.social-icons {
+
+  a:not(:first-child) {
+    margin-left: 2px;
+  }
+
+  .google {
+    color: rgb(221, 74, 56);
+  }
+
+  .facebook {
+    color: rgb(59, 90, 152);
+  }
+
+  .linkedin {
+    color: rgb(18, 123, 183);
+  }
+
+  .twitter {
+    color: rgb(85, 171, 238);
+  }
+
+  .youtube {
+    color: rgb(252, 75, 57);
+  }
+
+  .email {
+    color: rgb(59, 125, 183);
+  }
+
+  @include vertical-align()
+}

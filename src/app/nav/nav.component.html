@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top p-0">
+  <div class="container">
+
+    <a class="navbar-brand" href="#"><fa-icon icon="utensils"></fa-icon></a>
+
+    <button class="navbar-toggler" type="button" (click)="toggleCollapsed()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse" [class.collapse]="collapsed">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><fa-icon icon="home"></fa-icon>Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><fa-icon icon="info-circle"></fa-icon>About</a>
+        </li>
+
+        <li class="nav-item" ngbDropdown>
+          <a class="nav-link" ngbDropdownToggle href="#" id="menu-dropdown">Menu</a>
+          <div ngbDropdownMenu aria-labelledby="menu-dropdown">
+            <a class="dropdown-item" href="#">Menu Link 1</a>
+            <a class="dropdown-item" href="#">Menu Link 2</a>
+            <a class="dropdown-item" href="#">Menu Link 3</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="menu">
+    <div class="menu-section" *ngFor="let section of menu">
+      <h3>{{ section.title }}</h3>
+      <ng-container *ngFor="let item of section.items">
+        <h4>{{ item.title }}</h4>
+        <p *ngIf="item.descr">{{ item.descr }}</p>
+      </ng-container>
+    </div>
+  </div>
+</div>

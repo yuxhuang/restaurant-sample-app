@@ -1,0 +1,16 @@
+<div class="d-flex pb-2 row"
+     [class.flex-row]="!reverse"
+     [class.flex-row-reverse]="reverse"
+     [class.has-border-top]="isNotFirstItem" [class.pt-4]="isNotFirstItem">
+  <div *ngIf="item.pullquote" class="pullquote p-2 col-12 col-sm-2">
+    <h4 align=center>{{ item.pullquote }}</h4>
+  </div>
+  <div class="item col-12 col-sm-10">
+    <h3 *ngIf="item.title">{{ item.title }}</h3>
+    <h4 *ngIf="item.subtitle">{{ item.subtitle }}</h4>
+    <p *ngIf="item.content">{{ item.content }}</p>
+    <p *ngIf="item.url">
+      <a [href]="item.url">More &raquo;</a>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+nav {
+  background-color: $dark-purple;
+
+  .navbar-brand {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      padding-left: 0; padding-right: 0;
+    }
+  }
+
+  ul {
+
+    li {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        padding-left: 0.5rem; padding-right: 0.5rem;
+      }
+    }
+
+    li.active {
+      background-color: rgb(26, 35, 126);
+    }
+  }
+}

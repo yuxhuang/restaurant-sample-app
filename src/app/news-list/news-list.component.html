@@ -1,0 +1,6 @@
+<div class="container">
+  <app-news-list-item *ngFor="let item of items; let idx = index"
+                      [item]="item"
+                      [reverse]="idx % 2 === 0"
+                      [isNotFirstItem]="idx > 0"></app-news-list-item>
+</div>

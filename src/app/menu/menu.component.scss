@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.menu {
+  columns: 380px;
+  max-width: 780px;
+
+  margin: 0 auto;
+
+  .menu-section {
+    display: inline-block;
+
+    max-width: 380px;
+
+    border: 1px solid $black;
+    padding: 1rem;
+    margin: 1rem auto;
+
+    h3 {
+      font-size: large;
+    }
+
+    h4 {
+      font-size: medium;
+    }
+
+    p {
+      font-size: small;
+    }
+  }
+}
